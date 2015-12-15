@@ -1,0 +1,876 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, sans-serif;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color:#fff
+}
+body
+{
+    min-width: 980px;
+    background: #eeeeee;
+    font-size: 12px;
+}
+/*header开始*/
+header
+{
+    width: 100%;
+    height: 80px;
+    background-color: #522a5c;
+    position: relative;
+}
+.nav-wrap
+{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;/*父元素必须有高度*/
+}
+.logo
+{
+    position: absolute;
+    bottom: 1px;
+    color:#ffffff;
+}
+header ul
+{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+header ul li
+{
+    list-style: none;
+    font: 14px SimSun, sans-serif ;
+    margin-left: 28px;
+    display: inline-block;
+}
+header ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+header .icon-github
+{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    background: url("../img/icon-github.png") no-repeat ;
+     width: 30px;
+     height: 34px;
+}
+/*header结束*/
+/*banner开始*/
+.banner
+{
+    background: url("../img/banner-bg.jpg");
+    background-repeat:no-repeat;
+    height: 525px;
+    background-size: cover;
+    position: relative;
+}
+.inner
+{
+    height: 80px;
+    width: 340px;
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+    padding: 10px  10px  30px ;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.5) 75%, rgba(255, 255, 255, 0) 100%);/*渐变需针对不同浏览器*/
+}
+.inner h2
+{
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: right;
+}
+.inner p
+{
+    font-size: 12px;
+    line-height: 150%;
+    text-indent: 2em;
+}
+/*banner结束*/
+/*article开始*/
+.article
+{
+    width: 980px;
+    margin: 10px auto 110px;
+;
+}
+.article-page
+{
+    overflow: hidden;
+
+}
+.page
+{
+    width: 320px;
+    float: left;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    background: #ffffff;
+}
+.page2
+{
+    width: 320px;
+    float: left;
+    margin: 0 10px;
+    background: #ffffff;
+}
+.page img ,.page2 img
+{
+    margin: 10px 10px 0 10px;
+}/*图片设置margin*/
+.page p,.page2 p
+{
+    padding: 15px 25px 30px;
+    font-size: 12px;
+    line-height: 170%;
+    text-indent: 2em;
+}
+/*article结束三列等高布局任不太清楚*/
+/*introduction开始*/
+.introduction
+{
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+}
+.avatar
+{
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.introduction h3 {
+    font-size: 20px;
+    font-family: Century Gothic;
+    color: black;
+}
+.introduction p
+{
+    font-size: 14px;
+    color: black;
+    width: 600px;
+    margin: 0 auto ;
+    padding: 40px 0 150px;
+    text-indent: 2em;
+}
+/*introduction结束*/
+/*footer开始*/
+footer
+{
+    background-color: black;
+    clear: both;
+}
+.footer-nav
+{
+    color: #ffffff;
+    font-size: 12px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+.footer-nav ul
+{
+    padding: 12px 0 12px;
+}
+.footer-nav li
+{
+    display: inline-block;
+    margin-right: 25px;
+}
+.contact
+{
+    color: #ffffff;
+    text-align: left;
+    font-size:12px;
+}
+.contact a:hover
+{
+    text-decoration: underline;
+    text-underline: #fff;
+}
+.contact ul
+{
+    display: inline-block;
+    padding:40px 90px;
+    vertical-align: top;
+}
+.contact li
+{
+    margin-bottom: 5px;
+
+}
+.contact .tag
+{
+    color: #ccc;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.copyright
+{
+    color: #ffffff;
+    text-align: center;
+
+}
+.github
+{
+    margin-left: 49%;
+    display:block;
+    background: url("../img/icon-github.png") no-repeat ;
+    width: 30px;
+    height: 34px;
+
+}
+.copyright p
+{
+    margin: 40px 0 20px;
+}
+/*footer结束*/
+/*blog开始*/
+#content
+{
+    margin: 20px auto;
+    width: 980px;
+}
+.clearFix:after
+{
+    clear: both; /*添加清除浮动属性*/
+    display: block; /*将它设为块状元素*/
+    content: "."; /*这个块状元素的内容为一个 . 其实也可以不设，因为下面要隐藏掉它*/
+    visibility: hidden; /*将它隐藏掉*/
+    height: 0; /*将它高度设为0px*/
+    line-height: 0; /*将它行高设为0px;*/
+}
+.main
+{
+    width: 710px;
+    float: left;
+}
+.main-body
+{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.main-body .mark
+{
+
+    margin-top: 20px;
+    margin-left: -50px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+}
+.mark .date
+{
+    width: 50px;
+    height: 40px;
+    background: #522a5c;
+    line-height: 40px;
+}
+.mark .kind
+{
+    width: 50px;
+    height: 40px;
+    background: #a660b7;
+    line-height: 40px;
+}
+
+
+.essay
+{
+    background: #fff;
+    padding: 23px 21px 16px 18px ;
+}
+.essay h2
+{
+    font-size: 16px;
+    color: #a660b7;
+    line-height: 1.5;
+}
+.essay h3
+{
+    color: #666;
+    font-size: 12px;
+    line-height: 2;
+}
+.essay p
+{
+    font-size: 10px;
+    line-height: 1.5;
+    text-indent: 2em;
+}
+.essay span
+{
+    display: block;
+    color: #999;
+    text-align: right;
+    margin-top: 30px;
+    font-size: 8px;
+}
+.pagenumber
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pagenumber li
+{
+    display: inline-block;
+    padding: 15px;
+    background: #fff;
+}
+.pagenumber li a
+{
+    color:#000;
+}
+.pagenumber li:hover
+{
+    background: #a660b7;
+}
+
+
+
+
+.sidebar
+{
+    width: 260px;
+    float: right;
+}
+
+.search
+{
+    padding: 19px;
+    background: #fff;
+}
+.search .text
+{
+    background: url("../img/search.png") 5px center no-repeat;
+    padding-left: 40px;
+    width: 128px;
+    height: 40px;
+    float: left;
+    border: 1px solid #ddd;
+}
+.search .button
+{
+    width: 50px;
+    height: 42px;
+    background: #ddd;
+    border: 1px solid #ddd;
+}
+.menu
+{
+    margin-top: 10px;
+}
+.menu li
+{
+    width: 256px;
+    height: 49px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 4px solid #dfc6e6;
+
+}
+.menu li:hover
+{
+    border-left: 4px solid #522a5c;
+}
+.menu li a
+{
+    color: #000;
+    line-height: 49px;
+    margin-left: 18px;
+}
+
+.calendar
+{
+    padding: 20px;
+    background: #fff;;
+    margin-top: 10px;
+}
+.month
+{
+    color: #773c88;
+    text-align: center;
+    font-weight: bold;
+}
+.month a
+{
+    color: #773c88
+}
+.month span
+{
+    padding:0 60px;
+}
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    color: #999;
+}
+.calendar tr
+{
+    border-bottom: 1px solid #eeeeee;
+}
+.calendar td
+{
+    width: 14.2%
+}
+.today
+{
+    background: #773c88;
+    color: #fff;
+}
+
+
+.tags
+{
+    padding: 16px;
+    margin-top: 10px;
+    background: #fff;
+    color: #773c88;
+}
+
+.tags-title
+{
+    font-size: 14px;
+    color: #666;
+}
+
+.tags .biger
+{
+    font-size: 30px;
+}
+.tags .big
+{
+    font-size: 20px;
+}
+/*blog结束*/
+/*gallery开始*/
+.tabs
+{
+    background: #fff;
+    overflow: hidden;
+    width: 645.9px;
+}
+.tabs li
+{
+    padding: 15px 20px 20px;
+    float: left;
+    font-size: 14px;
+    border-right: 1px solid #eee;
+    border-bottom:1px solid #eee ;
+    border-top: 4px solid #dfc6e6;
+}
+.tabs li#JavaScript
+{
+    border-top: 4px solid #dfc6e6;
+}
+.tabs li#UI
+{
+    border-top: 4px solid #d2a6ff;
+}
+.tabs li#Framework
+{
+    border-top: 4px solid #ffa98c;
+}
+.tabs li#Applications
+{
+    border-top: 4px solid #ffe188;
+}
+
+.tabs li#ALL:hover
+{
+    border-top: 4px solid #522a5c;
+    border-bottom: hidden;
+}
+.tabs li#JavaScript:hover
+{
+    border-top: 4px solid #522a5c;
+    border-bottom: hidden;
+}
+.tabs li#UI:hover
+{
+    border-top: 4px solid #5900b2;
+    border-bottom: hidden;
+}
+.tabs li#Framework:hover
+{
+    border-top: 4px solid #8c2300;
+    border-bottom: hidden;
+}
+.tabs li#Applications:hover
+{
+    border-top: 4px solid #d9a300;
+    border-bottom: hidden;
+}
+.tabs li a
+{
+    color: #000;
+}
+.works
+{
+    background: #fff;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    height: 600px;
+}
+.works p
+{
+    margin-left: 47px;
+}
+.demo_J
+{
+    background: #522a5c;
+    width: 330px;
+    margin:0 10px 10px 0;
+}
+.demo_U,.demo_U2
+ {
+     background: #5900b2;
+     width: 160px;
+ }
+.demo_A,.demo_A2,.demo_A3
+{
+    background: #d9a300;
+    width: 160px;
+}
+.demo_F,.demo_F2
+{
+    background: #8c2300;
+    width: 160px;
+}
+.demo_J2,.demo_J3
+{
+    background: #522a5c;
+    width: 160px;
+}
+.demo_J
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.demo_U
+{
+    position: absolute;
+    top: 20px;
+    left: 360px;
+}
+.demo_A
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.demo_A2
+{
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+
+.demo_F
+{
+    position: absolute;
+    left: 190px;
+    top: 230px;
+}
+.demo_J2
+{
+    position: absolute;
+    left: 360px;
+    top: 189px;
+}
+.demo_F2
+{
+    position: absolute;
+    top: 205px;
+    right: 20px;
+}
+.demo_J3
+{
+    position: absolute;
+    top: 431px;
+    left: 20px;
+}
+.demo_U2
+{
+    position: absolute;
+    left: 190px;
+    top: 399px;
+}
+.demo_A3
+{
+    position: absolute;
+    left: 360px;
+    top: 358px;
+}
+.tb
+{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #cac9ca;
+    border-radius: 12.5px;
+    line-height: 25px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+.watch_more
+{
+    height: 50px;
+    margin-top: 10px;
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+.watch_more img
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.gal
+{
+    margin-top: 59px;
+
+}
+.gal h2
+{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+.gal ol
+{
+    padding: 20px;
+    background: #fff;
+    margin-top: 10px;
+}
+.gal ol li
+{
+    margin-top: 15px;
+}
+.gal span
+{
+    display: inline-block;
+    background:#522a5c;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 20px;
+}
+
+ .box
+{
+    width: 102px;
+    height: 20px;
+    background:#f6f6f6;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ .tree,.trim,.todo,.uitab,.addClass
+ {
+     float: left;
+     height: 100%;
+     background: #522a5c;
+ }
+ .tree
+ {
+     width: 100%;
+ }
+.trim
+{
+    width: 80%;
+}
+.todo
+{
+    width: 60%;
+}
+.uitab
+{
+    width: 40%;
+}
+.addClass
+{
+    width: 30%;
+}
+/*gallery结束*/
+/*about开始*/
+#about
+{
+    background-color: #fff;
+    text-align: center;
+    margin: 100px auto;
+    width: 980px;
+    position: relative;
+    z-index: -1;
+    height: 1200px;
+}
+.middle-line
+{
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    background: #eee;
+    height: 1200px;
+    z-index: -2;
+}
+#about .avatar
+{
+    border: 10px solid #eee;
+    border-radius: 90px;
+    margin-top: -70px;
+    position: absolute;
+    left: 41%;
+}
+#about h2
+{
+    font-weight: normal;
+    font-size: 20px;
+}
+#about p,#about span
+{
+    font-size: 14px;
+}
+.head1
+{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+}
+.p1,.p2,.p31,.p32,.p33,.p41,.p42
+{
+    position: absolute;
+    left: 550px;
+    text-align: left;
+}
+.p1
+{
+    top: 120px;
+    right: 130px;
+    text-indent: 2em;
+}
+.ctt
+{
+    border: 5px solid #eee;
+    border-radius: 90px;
+    position: absolute;
+    left: 44.5%;
+    top: 220px;
+}
+.head2
+{
+    position: absolute;
+    top: 340px;
+    left: 350px;
+}
+
+.p2
+{
+    top: 340px;
+}
+
+.collage
+{
+    border: 5px solid #eee;
+    border-radius: 90px;
+    position: absolute;
+    left: 44.5%;
+    top: 420px;
+}
+.head3
+{
+    position: absolute;
+    top: 550px;
+    left: 350px;
+}
+.year1,.year2,.year3,.year4,.year5
+{
+    position: absolute;
+    left: 46.6%;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 2px 15px;
+    background-color: #fff;
+}
+.year1
+{
+    top: 550px;
+}
+.p31
+{
+    top: 555px;
+}
+
+.year2
+{
+    top: 620px;
+}
+.p32
+{
+    top: 625px;
+}
+.year3
+{
+    top: 690px;
+}
+.p33
+{
+    top: 695px;
+}
+
+.company
+{
+    border: 5px solid #eee;
+    border-radius: 90px;
+    position: absolute;
+    left: 44.5%;
+    top: 780px;
+}
+.head4
+{
+    position: absolute;
+    top: 920px;
+    left: 350px;
+}
+.year4
+{
+    top: 920px;
+}
+
+.p41
+{
+    top: 925px;
+}
+
+.year5
+{
+    top: 980px;
+}
+.p42
+{
+    top: 985px;
+}
+/*about结束*/
